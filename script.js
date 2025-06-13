@@ -4,11 +4,11 @@ let campoAventura;
 
 function setup() {
   createCanvas(800, 400);
-  createElement("h2", "@rasinformática");
+  createElement("h2", "@Naaratrs");
   createSpan("Sua idade:");
   campoIdade = createInput("5");
-  campoFantasia = createCheckbox("Gosta de filmes com Qi alto?");
-  campoAventura = createCheckbox("Gosta de filme sobre sistemas?");
+  campoFantasia = createCheckbox("Gosta de filmes com ação?");
+  campoAventura = createCheckbox("Gosta de filme de comedia?");
 }
 
 function draw() {
@@ -27,11 +27,11 @@ function draw() {
 function geraRecomendacao(idade, gostaDeFantasia, gostaDeAventura) {
   if (idade >= 10) {
     if (idade >= 14) {
-      return "Rafael, Fabiula, Maria Helena, Isabel";
+      return "Rafael";
     } else {
       if (idade >= 12) {
         if(gostaDeFantasia || gostaDeAventura) {
-          return "Github-professor-rafael";          
+          return "Github-Naaratrs";          
         } else{
          return "Programando com html e css";
         }
@@ -45,9 +45,9 @@ function geraRecomendacao(idade, gostaDeFantasia, gostaDeAventura) {
     }
   } else {
     if (gostaDeFantasia) {
-      return "@rasinformática";
+      return "@Naaratrs";
     } else {
-      return "Todo Hacker tem um início";
+      return "Um maluco no pedaço";
     }
   }
 }
