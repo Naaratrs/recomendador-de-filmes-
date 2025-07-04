@@ -4,7 +4,7 @@ let campoAventura;
 
 function setup() {
   createCanvas(800, 400);
-  createElement("h2", "@Naaratrs");
+  createElement("h2", "@Naaratrs ");
   createSpan("Sua idade:");
   campoIdade = createInput("5");
   campoFantasia = createCheckbox("Gosta de filmes com ação?");
@@ -37,7 +37,7 @@ function geraRecomendacao(idade, gostaDeFantasia, gostaDeAventura) {
         }
       } else {
         if (gostaDeFantasia) {
-          return "Tele hackers";
+          return "sobrenatural";
         } else {
           return "Nenhum sistema é 100% seguro";
         }
